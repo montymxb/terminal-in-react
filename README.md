@@ -1,3 +1,5 @@
+> This is a fork of terminal-in-react to address dead-project issues relevant to the front-end deployment of the BoGL DSTL.
+
 # Terminal in React
 [![Downloads][npm-dm]][package-url]
 [![Downloads][npm-dt]][package-url]

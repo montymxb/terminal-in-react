@@ -791,7 +791,7 @@ class Terminal extends Component {
 
   // Execute the commands
   runCommand = (instance, inputText, force = false) => {
-    // first shave of front and back space with trim
+    // trim input before we split it up
     const inputArray = inputText.trim().split(' ');
     const input = inputArray[0];
     const args = inputArray; // Undefined for function call

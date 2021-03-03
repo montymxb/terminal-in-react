@@ -170,6 +170,10 @@ class Content extends Component {
                 <MainInput
                   type="text"
                   tabIndex="-1"
+                  autocomplete="off"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  spellcheck="false"
                   innerRef={(com) => { this.com = com; }}
                   onKeyPress={this.handleChange}
                   onKeyDown={this.handleKeyPress}

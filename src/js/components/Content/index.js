@@ -169,7 +169,7 @@ class Content extends Component {
                 </Prompt>
                 <MainInput
                   type="text"
-                  tabIndex="-1"
+                  tabIndex="-2"
                   autocomplete="off"
                   autocorrect="off"
                   autocapitalize="off"

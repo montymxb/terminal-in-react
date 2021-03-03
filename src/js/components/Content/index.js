@@ -169,11 +169,13 @@ class Content extends Component {
                 </Prompt>
                 <MainInput
                   type="text"
-                  tabIndex="-2"
-                  autocomplete="off"
-                  autocorrect="off"
-                  autocapitalize="off"
+                  tabIndex="-1"
+
+                  autoComplete="off"
+                  autoCorrect="off"
+                  autoCapitalize="off"
                   spellcheck="false"
+
                   innerRef={(com) => { this.com = com; }}
                   onKeyPress={this.handleChange}
                   onKeyDown={this.handleKeyPress}

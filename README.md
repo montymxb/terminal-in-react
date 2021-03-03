@@ -1,5 +1,3 @@
-> This is a fork of terminal-in-react to address dead-project issues relevant to the front-end deployment of the BoGL DSTL.
-
 # Terminal in React
 [![Downloads][npm-dm]][package-url]
 [![Downloads][npm-dt]][package-url]
@@ -9,6 +7,18 @@
 [![License][license]][package-url]
 ![size](https://img.shields.io/badge/size-31.4%20KB-brightgreen.svg)
 ![size](https://img.shields.io/badge/gzip-8.63%20KB-brightgreen.svg)
+
+## BoGL Update Instructions
+This is a fork of terminal-in-react to address dead-project issues relevant to the front-end deployment of the BoGL DSTL.
+
+If you are a developer for the BoGL project, you can use the following steps in order to make changes to the frontend.
+
+- Run `npm run build` to rebuild the lib
+- Update the version number in package.json
+  - if you have several commits that together are one change, only update the version number for that singular change
+- Commit & push your changes to the master branch
+- From your local **bogl-editor** installation, run `npm install` to get the updated lib
+- If the changes do *not* show up on frontend, you can remove the local terminal-in-react installation via `rm -rf node_modules/terminal-in-react/` and run `npm install` again to fetch a new copy. Your changes should be present then.
 
 <p align="center">
   <img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/terminal-icon.png"  width="300" height="300" />
